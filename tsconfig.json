@@ -1,11 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "Node16",
-    "allowJs": true, // js 파일들 ts에서 import해서 쓸 수 있는지
-    "jsx": "react-jsx", // tsx 파일을 jsx로 어떻게 컴파일할 것인지 'preserve', 'react-native', 'react'
-    "declaration": true, //컴파일시 .d.ts 파일도 자동으로 함께생성 (현재쓰는 모든 타입이 정의된 파일)
-    "removeComments": true, //컴파일시 주석제거
-    "strictNullChecks": true //null, undefined 타입에 이상한 짓 할시 에러내기
-  }
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["src"]
 }
