@@ -1,0 +1,18 @@
+.modal_container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: rgba(180, 180, 180, 0.653);
+  cursor: pointer;
+}
+.modal_container .modal_img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}/*# sourceMappingURL=ProfileImgModal.css.map */

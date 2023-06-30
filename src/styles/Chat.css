@@ -1,0 +1,105 @@
+.chat_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 720px;
+  margin-top: 1rem;
+  background-color: #fff9ef;
+  box-shadow: 0 2px 6px 0 gray;
+  border-radius: 1rem;
+}
+.chat_container .chat_topbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #faf0e1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.chat_container .chat_topbar .chat_topbar_backarrow {
+  position: absolute;
+  left: 5%;
+  cursor: pointer;
+}
+.chat_container .chat_topbar .chat_topbar_matchmaker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.chat_container .chat_topbar .chat_topbar_matchmaker .chat_topbar_matchmaker_img {
+  width: 1.9rem;
+  height: 1.8rem;
+  border-radius: 45%;
+  box-shadow: 0 0.2px 3px 0 gray;
+}
+.chat_container .chat_topbar .chat_topbar_matchmaker .chat_topbar_matchmaker_img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+.chat_container .chat_topbar .chat_topbar_matchmaker .chat_topbar_matchmaker_name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.chat_container .chat_content_box {
+  width: calc(100% - 1rem);
+  height: calc(720px - 7rem);
+  padding: 0 0.5rem 0 0.5rem;
+}
+.chat_container .chat_inputbar {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  bottom: 0;
+  background-color: #faf0e1;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.chat_container .chat_inputbar .chat_inputbar_addfile {
+  width: 1.9rem;
+  height: 1.9rem;
+  color: gray;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  background: none;
+  border-radius: 50%;
+  border: 2px solid gray;
+  opacity: 0.5;
+  box-shadow: 0 0.2px 3px 0 gray;
+  cursor: pointer;
+}
+.chat_container .chat_inputbar input {
+  width: 60%;
+  height: 2rem;
+  padding: 0.1rem 3rem 0.1rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  box-shadow: 0 0.2px 3px 0 gray;
+}
+.chat_container .chat_inputbar input:focus::-moz-placeholder {
+  color: transparent;
+}
+.chat_container .chat_inputbar input:focus::placeholder {
+  color: transparent;
+}
+.chat_container .chat_inputbar .chat_inputbar_addchat {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  top: 30%;
+  right: 10%;
+  color: white;
+  background-color: dodgerblue;
+  transform: rotate(90deg);
+  cursor: pointer;
+}/*# sourceMappingURL=Chat.css.map */
