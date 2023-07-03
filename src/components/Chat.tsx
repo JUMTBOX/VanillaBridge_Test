@@ -15,7 +15,7 @@ export default function Chat() {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-  //상대방 프로필 사진 경로 가져오기
+  //상대방 프로필 사진 경로 가져오기..
   const getImg = () => {
     let maker = chatData.filter((el) => el.user_id === 2);
     setUrl((cur: string) => maker[0]?.photo_url);
@@ -49,7 +49,7 @@ export default function Chat() {
         }
         rawData.sort(dateSorting);
 
-        setChatData((cur: ChatForm[]) => [...cur, ...rawData]);
+        setChatData((cur: ChatForm[]) => [...rawData]);
       }
     } catch (err) {
       console.error(err);
